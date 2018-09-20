@@ -1,3 +1,8 @@
+"""
+Author: Karshan Arjun
+Using Python3
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
