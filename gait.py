@@ -70,11 +70,9 @@ for i in range(x):
 plt.figure()
 plt.title('Enhanced Data')
 plt.plot(new_data)
-plt.legend()
 plt.show()
 
 # Extract the histogram
 plt.title('Features')
 plt.hist(new_data)
-plt.legend()
 plt.show()
