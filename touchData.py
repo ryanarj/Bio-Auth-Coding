@@ -1,10 +1,10 @@
 """
 Author: Karshan Arjun
 Using Python3
+Number of features: 20
 """
 import pandas as pan
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.feature_selection import VarianceThreshold
 
 
@@ -23,15 +23,8 @@ column_headers = ['Hold .', 'Hold t', 'Hold i', 'Hold e', 'Hold Shift',
                   'Size n', 'Size l', 'Size Enter', 'AvH', 'AvP', 'AvA']
 
 # Get all the values
-data = pan.read_csv('touchData.csv', names=column_headers)
-varience = np.var(data)
-m = np.mean(varience)
+data1 = pan.read_csv('touchData.csv', names=column_headers)
+varience = np.var(data1)
+m = data1 - np.mean(varience)
 vt = VarianceThreshold(threshold=m)
-data = vt.fit_transform(data)
-
-plt.figure()
-plt.title('Enhanced Data')
-plt.plot(data)
-plt.show()
-
-x = 1
+data2 = vt.fit_transform(data1)
