@@ -1,5 +1,5 @@
 """
-Author: Karshan Arjun
+Author:Karshan Arjun
 Using Python3
 """
 
@@ -12,7 +12,6 @@ x_values = []
 y_values = []
 z_values = []
 
-# Get all the values
 with open('gaitData.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
